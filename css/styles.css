@@ -185,10 +185,6 @@ h1 span{display: block;}
     font-weight: 50;
 }
 
-.about p{
-    font-size: .9em;
-}
-
 .about h1{
     font-size:5.1rem;
 }
@@ -516,6 +512,11 @@ circle {
   animation-name: sw-sub;
 }
 
+.con{
+    padding-top:3em;
+    clear:both;
+}
+
 /*
  pie percentage made by stroke-dasharray.
  stroke-dasharray format is...
@@ -597,6 +598,6 @@ circle {
 ==================*/
 
 .conclusions{
-    height:100vh;
-    background-color:orange;
+    height:50vh;
+    background-color:black;
 }
