@@ -290,7 +290,7 @@ h1 span{display: block;}
 }
 
 .bar5{
-    background: #535154;
+    background: #948B3D;
 }
 
 .bar6{
@@ -302,7 +302,7 @@ h1 span{display: block;}
 }
 
 .bar8{
-    background: #948B3D;
+    background: #535154;
 }
 
 #bars span {
@@ -423,6 +423,11 @@ h1 span{display: block;}
 .desc{
     float:left;
     width:50%;
+}
+
+.finishes p{
+    color:white;
+    font-size: 1.6em;
 }
 
 .weight-stoppages{
