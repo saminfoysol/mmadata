@@ -1,0 +1,562 @@
+@import
+url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+
+*{
+    box-sizing: border-box;
+    transition: all ease-in-out 550ms;
+}
+
+body{
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+/*make images fit properly in containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 98%;
+    overflow:auto;
+    margin: 0 auto;
+    max-width: 70em;
+}
+
+/*navbar
+=========================*/
+
+.line{
+    width: 50%;
+    float:left;
+    height:12%;
+}
+
+.first{
+    border-left: 1px solid gray;
+}
+
+.sidenav {
+    height: 100%;
+    width: 12.5rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 1.25rem;
+}
+
+.sidenav a {
+    padding: .375rem .375rem .375rem .375rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #818181;
+    display: block;
+}
+
+i{
+    color:gold;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 12.5rem; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 28.13rem) {
+  .sidenav {padding-top: 0.9375rem;}
+  .sidenav a {font-size: 1.125rem;}
+}
+
+/*home page
+===================*/
+
+.home-hero{
+    background-image: url(../img/boxing.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    padding: 10em 0;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    /*keeps the pic locked*/
+    background-attachment: fixed;
+
+}
+
+.title {
+    
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    margin-top: 1em;
+    
+    
+}
+
+.subtitle{
+    
+    font-size:2.1rem;
+    text-align:center;
+    font-weight: 50;
+   
+}
+
+.subtitle span{
+    display:block;
+}
+
+h1 span{display: block;}
+
+@media (min-width: 65rem) {
+    
+    .title{
+        font-size: 4.7rem;
+    }
+
+    .home-hero{
+        height: 100vh;
+        padding-top: 15vh;
+    }
+}
+
+/*arrow*/
+
+.arrow-container{
+  width: 6.25rem;
+  height: 6.25rem;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 4.063rem;
+  left: 0;
+  right: 0;
+}
+
+
+
+.arrow-2{
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color:grey;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.25rem;
+  left: 6.25rem;
+  z-index: 1;
+  display: table;
+  opacity:.5;
+  
+}
+
+.arrow-2:hover{
+    background-color:#FFD700;
+    opacity:1;
+}
+
+
+.arrow-2 i.fa{
+  font-size: 1.875rem;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #006064;
+}
+
+/*about
+
+--------------*/
+
+.about{
+    padding: 1em 5em;
+    height:115vh;
+    background-color:black;
+    color:black;
+    font-size:2.1rem;
+    text-align:center;
+    font-weight: 50;
+}
+
+.about h1{
+    font-size:5.1rem;
+}
+
+
+
+
+
+/*stats
+===================*/
+
+.stats{
+
+    display:flex;
+    background: linear-gradient(to right, black 50%, #39CCCC 50%);
+    background-size: 200% 100%;
+    background-position:left bottom;
+    height:120vh;
+    padding-top:5em;
+
+}
+
+.bgdata{
+    display:inline-block;
+}
+
+
+
+#chart {
+
+    width: 59.38rem;
+    height: 31.25rem;
+    margin-top: 1em;
+    margin-left:6%;
+
+  /*display: block;*/
+}
+  
+#numbers {
+    width: 3.125rem; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+#numbers li {
+    list-style: none;
+    height: 4.938rem;
+    position: relative;
+    bottom: 1.875rem;
+}
+      
+
+#numbers span {
+    color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0.625rem;
+}
+
+  
+#bars {
+    display: inline-block;
+    background-color:black;
+    width: 56.25rem;
+    height: 31.25rem;
+    padding: 0;
+    margin: 0;
+}
+
+#bars li {
+    display: table-cell;
+    width: 7.5rem;
+    height: 31.25rem;
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+
+.bar {
+    display: block;
+    width: 5.625rem;
+    margin-left: 0.9375rem;
+    background: #49E;
+    position: absolute;
+    bottom: 0;
+}
+
+#bars span {
+    color: black;
+    width: 100%;
+    position: absolute;
+    bottom: -2em;
+    left: 0;
+    text-align: center;
+}
+
+.stats h1{
+    color:black;
+    font-weight:100;
+    font-size:2.5rem;
+}
+
+#chart:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.stats-info{
+    background-color:#0e1a24;
+    padding-bottom:3em;
+}
+
+.circle-row{
+    
+    display:inline;
+}
+
+.circle {
+    float:left;
+    width:33.2%;
+    padding:1em;
+}
+
+.c1{
+    opacity:0;
+
+}
+
+.c1:after{
+    border: 4px solid red;
+}
+
+.c2{
+    opacity:0;
+}
+
+.c2:after{
+    border: 4px solid #00ff00;
+}
+
+.c3{
+    opacity:0;
+}
+
+.c3:after{
+    border: 4px solid #0000ff;
+}
+.circle:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    background: #0e1a24;
+    
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+.circle p {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    color:white;
+}
+
+.textbox{
+    padding:1.5em;
+}
+
+/*fight analysis
+=======================*/
+
+.finishes{
+    padding-top:3em;
+    background-color:black;
+    height:190vh;
+}
+
+.finishes h1{
+    color:white;
+    font-weight:100;
+    font-size:2.5rem;
+}
+
+.lst{
+    display:inline;
+    
+}
+
+.fil{
+    float:left;
+    width:50%;
+
+}
+
+.all-stoppages{
+    float:left;
+    width:50%;
+}
+
+.desc{
+    float:left;
+    width:50%;
+}
+
+.weight-stoppages{
+    padding-top:4em;
+    clear:left;
+    float:left;
+    width:100%;
+    overflow:hidden;
+    
+}
+
+.small-stoppages{
+    float:left;
+    padding-right:1em;
+    width:33%;
+
+}
+
+.small-stoppages h3{
+    color:white;
+    font-weight:20;
+    font-size:2.5rem;
+}
+
+/*animate pie charts*/
+circle {
+  fill:none;
+  stroke-width:31.8309886184;
+  stroke-dasharray: 0,0,0,100;
+  stroke-dashoffset: 25;
+  -webkit-animation: all-filler 3s ease both;
+  animation: all-filler 6s ease both;
+}
+
+.all-filler {
+  stroke:#e44221;
+  -webkit-animation-name: all-filler;
+  animation-name: all-filler;
+}
+
+.all-ko {
+  stroke:#e44221;
+  -webkit-animation-name: all-ko;
+  animation-name: all-ko;
+}
+.all-sub {
+  stroke:#488f99;
+  -webkit-animation-name: all-sub;
+  animation-name: all-sub;
+}
+
+.hw-ko {
+  stroke:#e44221;
+  -webkit-animation-name: hw-ko;
+  animation-name: hw-ko;
+}
+.hw-sub {
+  stroke:#488f99;
+  -webkit-animation-name: hw-sub;
+  animation-name: hw-sub;
+}
+
+.lw-ko {
+  stroke:#e44221;
+  -webkit-animation-name: lw-ko;
+  animation-name: lw-ko;
+}
+.lw-sub {
+  stroke:#488f99;
+  -webkit-animation-name: lw-sub;
+  animation-name: lw-sub;
+}
+
+.sw-ko {
+  stroke:#e44221;
+  -webkit-animation-name: sw-ko;
+  animation-name: sw-ko;
+}
+.sw-sub {
+  stroke:#488f99;
+  -webkit-animation-name: sw-sub;
+  animation-name: sw-sub;
+}
+
+/*
+ pie percentage made by stroke-dasharray.
+ stroke-dasharray format is...
+
+ keyframe 100% : 0 offset this-percentage rest
+
+ I added keyframe 50% for infinite presentation.
+*/
+
+/* 1st pie is 40% */
+@-webkit-keyframes all-filler {
+  50%,100% {stroke-dasharray: 0,100,0,0;}
+}
+@keyframes all-filler {
+  50%,100% {stroke-dasharray: 0,100,0,0;}
+}
+
+@-webkit-keyframes all-ko {
+  50%,100% {stroke-dasharray: 0,0,63,37;}
+}
+@keyframes all-ko {
+  50%,100% {stroke-dasharray: 0,0,63,37;}
+}
+/* 2nd pie is 30% */
+@-webkit-keyframes all-sub {
+  50%,100% {stroke-dasharray: 0,63,37,0;}
+}
+@keyframes all-sub {
+  50%,100% {stroke-dasharray: 0,63,37,0;}
+}
+
+/* 1st pie is 40% */
+@-webkit-keyframes hw-ko {
+  50%,100% {stroke-dasharray: 89,11,0,0;}
+}
+@keyframes hw-ko {
+  50%,100% {stroke-dasharray: 89,11,0,0;}
+}
+/* 2nd pie is 30% */
+@-webkit-keyframes hw-sub {
+  50%,100% {stroke-dasharray: 0,89,11,0;}
+}
+@keyframes hw-sub {
+  50%,100% {stroke-dasharray: 0,89,11,0;}
+}
+
+/* 1st pie is 40% */
+@-webkit-keyframes sw-ko {
+  50%,100% {stroke-dasharray: 18,82,0,0;}
+}
+@keyframes sw-ko {
+  50%,100% {stroke-dasharray: 18,82,0,0;}
+}
+/* 2nd pie is 30% */
+@-webkit-keyframes sw-sub {
+  50%,100% {stroke-dasharray: 0,18,82,0;}
+}
+@keyframes sw-sub {
+  50%,100% {stroke-dasharray: 0,18,82,0;}
+}
+
+/* 1st pie is 40% */
+@-webkit-keyframes lw-ko {
+  50%,100% {stroke-dasharray: 53,47,0,0;}
+}
+@keyframes lw-ko {
+  50%,100% {stroke-dasharray: 53,47,0,0;}
+}
+/* 2nd pie is 30% */
+@-webkit-keyframes lw-sub {
+  50%,100% {stroke-dasharray: 0,53,47,0;}
+}
+@keyframes lw-sub {
+  50%,100% {stroke-dasharray: 0,53,47,0;}
+}
+
+
+/*conclusion
+==================*/
+
+.conclusions{
+    height:100vh;
+    background-color:orange;
+}
