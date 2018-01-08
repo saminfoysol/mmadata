@@ -233,7 +233,7 @@ h1 span{display: block;}
 }
 #numbers li {
     list-style: none;
-    height: 4.938rem;
+    height: 4.4442rem;
     position: relative;
     bottom: 1.875rem;
 }
@@ -243,23 +243,23 @@ h1 span{display: block;}
     color: black;
     position: absolute;
     bottom: 0;
-    right: 0.625rem;
+    right: 0rem;
 }
 
   
 #bars {
     display: inline-block;
     background-color:black;
-    width: 56.25rem;
-    height: 31.25rem;
+    width: 50.625rem;
+    height: 28.125rem;
     padding: 0;
     margin: 0;
 }
 
 #bars li {
     display: table-cell;
-    width: 7.5rem;
-    height: 31.25rem;
+    width: 6.75rem;
+    height: 28.125rem;
     margin: 0;
     text-align: center;
     position: relative;
@@ -267,11 +267,42 @@ h1 span{display: block;}
 
 .bar {
     display: block;
-    width: 5.625rem;
-    margin-left: 0.9375rem;
-    background: #49E;
+    width: 5.0625rem;
+    margin-left: 0.84375rem;
     position: absolute;
     bottom: 0;
+}
+
+.bar1{
+    background: #396AB1;
+}
+
+.bar2{
+    background: #DA7C30;
+}
+
+.bar3{
+    background: #3E9651;
+}
+
+.bar4{
+    background: #CC2529;
+}
+
+.bar5{
+    background: #535154;
+}
+
+.bar6{
+    background: #6B4C9A;
+}
+
+.bar7{
+    background: #922428;
+}
+
+.bar8{
+    background: #948B3D;
 }
 
 #bars span {
