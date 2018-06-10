@@ -13,6 +13,46 @@ $(window).scroll(function () {
         $(".about").css('background-color','gold');
         //$(this).off('scroll');
     }
+
+    if ($(window).scrollTop() >= $(".home-hero").height()) {
+        $("#home-nav").css('color','#818181');
+        //$(this).off('scroll');
+    }
+    else{
+        $("#home-nav").css('color','gold');
+    }
+
+    if ($(window).scrollTop() >= $(".home-hero").height() && 
+        $(window).scrollTop() <= $(".home-hero").height() + $(".about").height()) {
+        $("#about-nav").css('color','gold');
+        //$(this).off('scroll');
+    }
+    else{
+        $("#about-nav").css('color','#818181');
+    }
+
+    if ($(window).scrollTop() >= 
+        $(".home-hero").height() + $(".about").height() + $(".bar-chart").height()
+        && $(window).scrollTop() <= $(".home-hero").height() + $(".about").height() + $(".bar-chart").height()
+        + $(".finishes").height()) {
+        $("#bar-nav").css('color','gold');
+        //$(this).off('scroll');
+    }
+    else{
+        $("#bar-nav").css('color','#818181');
+    }
+
+    if ($(window).scrollTop() >= 
+        $(".home-hero").height() + $(".about").height() + $(".bar-chart").height()
+        + $(".finishes").height()) {
+        $("#analysis-nav").css('color','gold');
+        //$(this).off('scroll');
+    }
+    else{
+        $("#analysis-nav").css('color','#818181');
+    }
+
+
 });
 
 $(window).scroll(function () {

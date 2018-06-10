@@ -71,6 +71,7 @@ i{
     margin-left: 12.5rem; /* Same as the width of the sidenav */
 }
 
+
 @media screen and (max-height: 28.13rem) {
   .sidenav {padding-top: 0.9375rem;}
   .sidenav a {font-size: 1.125rem;}
